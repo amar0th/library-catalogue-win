@@ -10,11 +10,6 @@ namespace LibraryCatalogue
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
-        public Author()
-        {
-            firstName = "";
-            lastName = "";
-        }
     }
 
     public class Book
@@ -27,12 +22,9 @@ namespace LibraryCatalogue
         public string publisher { get; set; }
         public Book()
         {
-            title = "";
-            year = 0;
             authors = new List<Author>();
             categories = new List<string>();
             genres = new List<string>();
-            publisher = "";
         }
     }
 

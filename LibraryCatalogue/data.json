@@ -1,0 +1,67 @@
+{
+  "books": [
+    {
+      "title": "testTitle1",
+      "year": 2020,
+      "authors": [
+        {
+          "firstName": "Test1",
+          "lastName": "Author1"
+        },
+        {
+          "firstName": "Test2",
+          "lastName": "Author2"
+        }
+      ],
+      "categories": [
+        "testCategory1",
+        "testCategory2"
+      ],
+      "genres": [
+        "testGenre1",
+        "testGenre2"
+      ],
+      "publisher": "testPublisher1"
+    },
+    {
+      "title": "testTitle2",
+      "year": 2021,
+      "authors": [
+        {
+          "firstName": "Test3",
+          "lastName": "Author3"
+        },
+        {
+          "firstName": "Test4",
+          "lastName": "Author4"
+        }
+      ],
+      "categories": [
+        "testCategory3",
+        "testCategory4"
+      ],
+      "genres": [
+        "testGenre3",
+        "testGenre4"
+      ],
+      "publisher": "testPublisher2"
+    },
+    {
+      "title": "Some Title",
+      "year": 2020,
+      "authors": [
+        {
+          "firstName": "Todor",
+          "lastName": "Todorov"
+        }
+      ],
+      "categories": [
+        "Roman"
+      ],
+      "genres": [
+        "Fiction"
+      ],
+      "publisher": "Pingvin"
+    }
+  ]
+}
