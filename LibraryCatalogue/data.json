@@ -62,6 +62,91 @@
         "Fiction"
       ],
       "publisher": "Pingvin"
+    },
+    {
+      "title": "Тествам Българския Език",
+      "year": 2019,
+      "authors": [
+        {
+          "firstName": "Тодор",
+          "lastName": "Тодоров"
+        }
+      ],
+      "categories": [
+        "Роман"
+      ],
+      "genres": [
+        "Фантастика"
+      ],
+      "publisher": "Сиела"
+    },
+    {
+      "title": "Тествам изчистването на формата",
+      "year": 1990,
+      "authors": [
+        {
+          "firstName": "Борислав",
+          "lastName": "Василев"
+        }
+      ],
+      "categories": [
+        "Разкази"
+      ],
+      "genres": [
+        "Научна Фантастика"
+      ],
+      "publisher": "Пенчо"
+    },
+    {
+      "title": "Тестваме съобщението",
+      "year": 2000,
+      "authors": [
+        {
+          "firstName": "Тестово",
+          "lastName": "Съобщение"
+        }
+      ],
+      "categories": [
+        "Извършва се"
+      ],
+      "genres": [
+        "Техническа"
+      ],
+      "publisher": "Проверка"
+    },
+    {
+      "title": "posledno",
+      "year": 2009,
+      "authors": [
+        {
+          "firstName": "Vesko",
+          "lastName": "Be"
+        }
+      ],
+      "categories": [
+        "testvam"
+      ],
+      "genres": [
+        "tazi"
+      ],
+      "publisher": "data"
+    },
+    {
+      "title": "Тестване на индентацията на джсон файла",
+      "year": 2002,
+      "authors": [
+        {
+          "firstName": "Тодор",
+          "lastName": "Тодоров"
+        }
+      ],
+      "categories": [
+        "Компютри"
+      ],
+      "genres": [
+        "Научни"
+      ],
+      "publisher": "101"
     }
   ]
 }

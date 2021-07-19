@@ -28,20 +28,46 @@ namespace LibraryCatalogue
 
         private void submit_Click(object sender, EventArgs e)
         {
-            newAuthor.firstName = "Todor";
-            newAuthor.lastName = "Todorov";
-            newBook.title = "Some Title";
-            newBook.year = 2020;
-            newBook.authors.Add(newAuthor);
-            newBook.categories.Add("Roman");
-            newBook.genres.Add("Fiction");
-            newBook.publisher = "Pingvin";
+            
+            try
+            {
+                newAuthor.firstName = firstName.Text;
+                newAuthor.lastName = lastName.Text;
+                newBook.title = title.Text;
+                newBook.year = Int32.Parse(year.Text);
+                newBook.authors.Add(newAuthor);
+                newBook.categories.Add(category.Text);
+                newBook.genres.Add(genre.Text);
+                newBook.publisher = publisher.Text;
 
-            library.books.Add(newBook);
-            string ser = JsonConvert.SerializeObject(library);
-            File.WriteAllText(fileName, ser);
-            Console.WriteLine(File.ReadAllText(fileName));
-
+                library.books.Add(newBook);
+                string ser = JsonConvert.SerializeObject(library, Formatting.Indented);
+                File.WriteAllText(fileName, ser);
+                Console.WriteLine(File.ReadAllText(fileName));
+                ClearAllText(this);
+                success.Text = "Книгата е успешно запазена!";
+                success.Visible = true;
+                var t = new Timer
+                {
+                    Interval = 2000
+                };
+                t.Tick += (s, ev) =>
+                {
+                    success.Visible = false;
+                }; t.Start();
+            }
+            catch(Exception exc)
+            {
+                warning.Text = String.Format("Изникна грешка при запазване! Съобщение:\n{0}", exc.Message);
+                var t = new Timer
+                {
+                    Interval = 2000
+                };
+                t.Tick += (s, ev) =>
+                {
+                    this.warning.Visible = false;
+                }; t.Start();
+            }
         }
 
         private void LibraryCatalogue_Load(object sender, EventArgs e)
@@ -50,16 +76,6 @@ namespace LibraryCatalogue
             data = File.ReadAllText(fileName);
             library = JsonConvert.DeserializeObject<Library>(data);
 
-/*            newAuthor.firstName = "Todor";
-            newAuthor.lastName = "Todorov";
-            newBook.title = "Some Title";
-            newBook.year = 2020;
-            newBook.authors.Add(newAuthor);
-            newBook.categories.Add("Roman");
-            newBook.genres.Add("Fiction");
-            newBook.publisher = "Pingvin";
-
-            library.books.Add(newBook);*/
 
 /*            foreach (Book bk in library.books)
             {
@@ -80,6 +96,22 @@ namespace LibraryCatalogue
                 }
                 Console.WriteLine(bk.publisher);
             }*/
+        }
+
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            ClearAllText(this);
+        }
+        void ClearAllText(Control con)
+        {
+            foreach (Control c in con.Controls)
+            {
+                if (c is TextBox)
+                    ((TextBox)c).Clear();
+                else
+                    ClearAllText(c);
+            }
         }
     }
 }

@@ -50,6 +50,8 @@ namespace LibraryCatalogue
             this.submit = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.showAll = new System.Windows.Forms.Button();
+            this.warning = new System.Windows.Forms.Label();
+            this.success = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,21 +65,18 @@ namespace LibraryCatalogue
             this.groupBox1.Controls.Add(this.firstName);
             this.groupBox1.Controls.Add(this.lastName);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(20, 75);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(15, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(245, 130);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.Size = new System.Drawing.Size(184, 106);
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Автор";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(120, 87);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(107, 71);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(28, 28);
+            this.button3.Size = new System.Drawing.Size(21, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "+";
             this.button3.UseVisualStyleBackColor = true;
@@ -85,194 +84,199 @@ namespace LibraryCatalogue
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(33, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Име";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // firstName
             // 
-            this.firstName.Location = new System.Drawing.Point(91, 23);
-            this.firstName.Margin = new System.Windows.Forms.Padding(4);
+            this.firstName.Location = new System.Drawing.Point(68, 19);
             this.firstName.Name = "firstName";
-            this.firstName.Size = new System.Drawing.Size(132, 22);
-            this.firstName.TabIndex = 1;
+            this.firstName.Size = new System.Drawing.Size(100, 20);
+            this.firstName.TabIndex = 3;
             // 
             // lastName
             // 
-            this.lastName.Location = new System.Drawing.Point(91, 55);
-            this.lastName.Margin = new System.Windows.Forms.Padding(4);
+            this.lastName.Location = new System.Drawing.Point(68, 45);
             this.lastName.Name = "lastName";
-            this.lastName.Size = new System.Drawing.Size(132, 22);
-            this.lastName.TabIndex = 3;
+            this.lastName.Size = new System.Drawing.Size(100, 20);
+            this.lastName.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 59);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(6, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Фамилия";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(88, 55);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(67, 45);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 28);
-            this.button1.TabIndex = 1;
+            this.button1.Size = new System.Drawing.Size(21, 23);
+            this.button1.TabIndex = 8;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 30);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Заглавие";
             // 
             // title
             // 
-            this.title.Location = new System.Drawing.Point(97, 26);
-            this.title.Margin = new System.Windows.Forms.Padding(4);
+            this.title.Location = new System.Drawing.Point(73, 21);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(396, 22);
-            this.title.TabIndex = 3;
+            this.title.Size = new System.Drawing.Size(298, 20);
+            this.title.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.category);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(273, 75);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(205, 61);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(204, 130);
-            this.groupBox2.TabIndex = 4;
+            this.groupBox2.Size = new System.Drawing.Size(153, 106);
+            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Категория";
             // 
             // category
             // 
-            this.category.Location = new System.Drawing.Point(36, 23);
-            this.category.Margin = new System.Windows.Forms.Padding(4);
+            this.category.Location = new System.Drawing.Point(27, 19);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(132, 22);
-            this.category.TabIndex = 4;
+            this.category.Size = new System.Drawing.Size(100, 20);
+            this.category.TabIndex = 7;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.genre);
             this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Location = new System.Drawing.Point(485, 75);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(364, 61);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(204, 130);
-            this.groupBox3.TabIndex = 5;
+            this.groupBox3.Size = new System.Drawing.Size(153, 106);
+            this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Жанр";
             // 
             // genre
             // 
-            this.genre.Location = new System.Drawing.Point(36, 23);
-            this.genre.Margin = new System.Windows.Forms.Padding(4);
+            this.genre.Location = new System.Drawing.Point(27, 19);
             this.genre.Name = "genre";
-            this.genre.Size = new System.Drawing.Size(132, 22);
-            this.genre.TabIndex = 4;
+            this.genre.Size = new System.Drawing.Size(100, 20);
+            this.genre.TabIndex = 10;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(87, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(66, 45);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(28, 28);
-            this.button2.TabIndex = 1;
+            this.button2.Size = new System.Drawing.Size(21, 23);
+            this.button2.TabIndex = 11;
             this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.publisher);
-            this.groupBox4.Location = new System.Drawing.Point(697, 75);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Location = new System.Drawing.Point(523, 61);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(332, 130);
-            this.groupBox4.TabIndex = 6;
+            this.groupBox4.Size = new System.Drawing.Size(249, 106);
+            this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Издателство";
             // 
             // publisher
             // 
-            this.publisher.Location = new System.Drawing.Point(8, 23);
-            this.publisher.Margin = new System.Windows.Forms.Padding(4);
+            this.publisher.Location = new System.Drawing.Point(6, 19);
             this.publisher.Name = "publisher";
-            this.publisher.Size = new System.Drawing.Size(315, 22);
-            this.publisher.TabIndex = 0;
+            this.publisher.Size = new System.Drawing.Size(237, 20);
+            this.publisher.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(517, 30);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(388, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 16);
+            this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Година";
             // 
             // year
             // 
-            this.year.Location = new System.Drawing.Point(583, 26);
-            this.year.Margin = new System.Windows.Forms.Padding(4);
+            this.year.Location = new System.Drawing.Point(437, 21);
             this.year.Name = "year";
-            this.year.Size = new System.Drawing.Size(105, 22);
-            this.year.TabIndex = 8;
+            this.year.Size = new System.Drawing.Size(80, 20);
+            this.year.TabIndex = 1;
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(821, 213);
-            this.submit.Margin = new System.Windows.Forms.Padding(4);
+            this.submit.Location = new System.Drawing.Point(616, 173);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(100, 28);
-            this.submit.TabIndex = 9;
+            this.submit.Size = new System.Drawing.Size(75, 23);
+            this.submit.TabIndex = 14;
             this.submit.Text = "Запази";
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(929, 213);
-            this.clear.Margin = new System.Windows.Forms.Padding(4);
+            this.clear.Location = new System.Drawing.Point(697, 173);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(100, 28);
-            this.clear.TabIndex = 10;
+            this.clear.Size = new System.Drawing.Size(75, 23);
+            this.clear.TabIndex = 15;
             this.clear.Text = "Изчисти";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // showAll
             // 
-            this.showAll.Location = new System.Drawing.Point(821, 249);
-            this.showAll.Margin = new System.Windows.Forms.Padding(4);
+            this.showAll.Location = new System.Drawing.Point(616, 202);
             this.showAll.Name = "showAll";
-            this.showAll.Size = new System.Drawing.Size(208, 68);
-            this.showAll.TabIndex = 11;
+            this.showAll.Size = new System.Drawing.Size(156, 55);
+            this.showAll.TabIndex = 16;
             this.showAll.Text = "Покажи всички книги";
             this.showAll.UseVisualStyleBackColor = true;
             // 
+            // warning
+            // 
+            this.warning.AutoSize = true;
+            this.warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.warning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.warning.Location = new System.Drawing.Point(154, 202);
+            this.warning.Name = "warning";
+            this.warning.Size = new System.Drawing.Size(75, 20);
+            this.warning.TabIndex = 12;
+            this.warning.Text = "Warning";
+            this.warning.Visible = false;
+            // 
+            // success
+            // 
+            this.success.AutoSize = true;
+            this.success.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.success.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.success.Location = new System.Drawing.Point(155, 202);
+            this.success.Name = "success";
+            this.success.Size = new System.Drawing.Size(77, 20);
+            this.success.TabIndex = 13;
+            this.success.Text = "Success";
+            this.success.Visible = false;
+            // 
             // LibraryCatalogue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 335);
+            this.ClientSize = new System.Drawing.Size(784, 272);
+            this.Controls.Add(this.success);
+            this.Controls.Add(this.warning);
             this.Controls.Add(this.showAll);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.submit);
@@ -285,7 +289,6 @@ namespace LibraryCatalogue
             this.Controls.Add(this.title);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LibraryCatalogue";
             this.Text = "Library Catalogue";
             this.Load += new System.EventHandler(this.LibraryCatalogue_Load);
@@ -325,6 +328,8 @@ namespace LibraryCatalogue
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button showAll;
+        private System.Windows.Forms.Label warning;
+        private System.Windows.Forms.Label success;
     }
 }
 
