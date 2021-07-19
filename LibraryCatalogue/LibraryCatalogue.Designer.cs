@@ -245,6 +245,7 @@ namespace LibraryCatalogue
             this.showAll.TabIndex = 16;
             this.showAll.Text = "Покажи всички книги";
             this.showAll.UseVisualStyleBackColor = true;
+            this.showAll.Click += new System.EventHandler(this.showAll_Click);
             // 
             // warning
             // 

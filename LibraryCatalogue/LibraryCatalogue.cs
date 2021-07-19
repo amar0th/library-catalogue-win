@@ -113,5 +113,12 @@ namespace LibraryCatalogue
                     ClearAllText(c);
             }
         }
+
+        private void showAll_Click(object sender, EventArgs e)
+        {
+            ListOfBooks list = new ListOfBooks();
+
+            list.Show();
+        }
     }
 }
