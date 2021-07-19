@@ -56,10 +56,19 @@
     <Compile Include="LibraryCatalogue.Designer.cs">
       <DependentUpon>LibraryCatalogue.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListOfBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfBooks.Designer.cs">
+      <DependentUpon>ListOfBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LibraryCatalogue.resx">
       <DependentUpon>LibraryCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfBooks.resx">
+      <DependentUpon>ListOfBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

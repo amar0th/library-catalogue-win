@@ -147,6 +147,23 @@
         "Научни"
       ],
       "publisher": "101"
+    },
+    {
+      "title": "Пешо",
+      "year": 1200,
+      "authors": [
+        {
+          "firstName": "Станчо",
+          "lastName": "Панчев"
+        }
+      ],
+      "categories": [
+        "Мартин"
+      ],
+      "genres": [
+        "Борко"
+      ],
+      "publisher": "Педали"
     }
   ]
 }

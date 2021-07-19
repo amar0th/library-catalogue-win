@@ -77,7 +77,7 @@ namespace LibraryCatalogue
             library = JsonConvert.DeserializeObject<Library>(data);
 
 
-/*            foreach (Book bk in library.books)
+            foreach (Book bk in library.books)
             {
                 Console.WriteLine(bk.title);
                 Console.WriteLine(bk.year);
@@ -95,7 +95,7 @@ namespace LibraryCatalogue
                     Console.WriteLine(gn);
                 }
                 Console.WriteLine(bk.publisher);
-            }*/
+            }
         }
 
 
