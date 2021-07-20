@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace LibraryCatalogue
 {
@@ -73,7 +74,9 @@ namespace LibraryCatalogue
 
         private void LibraryCatalogue_Load(object sender, EventArgs e)
         {
-            
+            CultureInfo.CurrentCulture = new CultureInfo("bg-BG");
+            CultureInfo.CurrentUICulture = new CultureInfo("bg-BG");
+
             data = File.ReadAllText(fileName);
             library = JsonConvert.DeserializeObject<Library>(data);
 

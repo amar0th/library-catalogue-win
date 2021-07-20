@@ -1,8 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Linq;
+using System.Globalization;
+using System.Threading;
 
 namespace LibraryCatalogue
 {
@@ -18,14 +22,16 @@ namespace LibraryCatalogue
         protected private void HandleData()
         {
             string data = File.ReadAllText(fileName);
-            Library library = JsonConvert.DeserializeObject<Library>(data);
+            Library lib = JsonConvert.DeserializeObject<Library>(data);
+            Console.WriteLine(CultureInfo.InvariantCulture);
+            List<Book> books = lib.books.OrderBy(o => o.title, StringComparer.CurrentCultureIgnoreCase).ToList();
 
             int lastTopPos = 5;
 
-            for (int i = 0; i < library.books.Count; i++)
+            for (int i = 0; i < books.Count; i++)
             {
                 //Current book we are looping through
-                Book currentBook = library.books[i];
+                Book currentBook = books[i];
 
                 /*Book Panel*/
                 Panel panel = new Panel
