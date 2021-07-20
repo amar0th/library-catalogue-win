@@ -59,6 +59,7 @@ namespace LibraryCatalogue
             catch(Exception exc)
             {
                 warning.Text = String.Format("Изникна грешка при запазване! Съобщение:\n{0}", exc.Message);
+                warning.Visible = true;
                 var t = new Timer
                 {
                     Interval = 2000
