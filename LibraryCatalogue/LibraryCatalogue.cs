@@ -15,16 +15,15 @@ namespace LibraryCatalogue
         string fileName;
         public LibraryCatalogue()
         {
-            InitializeComponent();
-            newAuthor = new Author();
-            newBook = new Book();
             library = new Library();
+            InitializeComponent();
             fileName = String.Format("{0}/LibraryCatalogue/data.json", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
         }
 
         private void submit_Click(object sender, EventArgs e)
         {
-            
+            newAuthor = new Author();
+            newBook = new Book();
             try
             {
                 newAuthor.firstName = firstName.Text;
@@ -37,6 +36,7 @@ namespace LibraryCatalogue
                 newBook.publisher = publisher.Text;
 
                 library.books.Add(newBook);
+
                 string ser = JsonConvert.SerializeObject(library, Formatting.Indented);
                 File.WriteAllText(fileName, ser);
                 Console.WriteLine(File.ReadAllText(fileName));
@@ -74,27 +74,6 @@ namespace LibraryCatalogue
 
             data = File.ReadAllText(fileName);
             library = JsonConvert.DeserializeObject<Library>(data);
-
-
-            foreach (Book bk in library.books)
-            {
-                Console.WriteLine(bk.title);
-                Console.WriteLine(bk.year);
-                foreach (Author au in bk.authors)
-                {
-                    Console.WriteLine(au.firstName);
-                    Console.WriteLine(au.lastName);
-                }
-                foreach (string ca in bk.categories)
-                {
-                    Console.WriteLine(ca);
-                }
-                foreach (string gn in bk.genres)
-                {
-                    Console.WriteLine(gn);
-                }
-                Console.WriteLine(bk.publisher);
-            }
         }
 
 
@@ -102,6 +81,7 @@ namespace LibraryCatalogue
         {
             ClearAllText(this);
         }
+
         void ClearAllText(Control con)
         {
             foreach (Control c in con.Controls)
