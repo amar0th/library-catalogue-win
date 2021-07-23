@@ -12,14 +12,14 @@ namespace LibraryCatalogue
 {
     public partial class ListOfBooks : Form
     {
-        private readonly string fileName = "../../data.json";
+        private readonly string fileName = String.Format("{0}/LibraryCatalogue/data.json", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
 
         public ListOfBooks()
         {
             InitializeComponent();
         }
 
-        protected private void HandleData()
+        private void HandleData()
         {
             string data = File.ReadAllText(fileName);
             Library lib = JsonConvert.DeserializeObject<Library>(data);

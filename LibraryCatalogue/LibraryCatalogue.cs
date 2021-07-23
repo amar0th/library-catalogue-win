@@ -19,7 +19,7 @@ namespace LibraryCatalogue
             newAuthor = new Author();
             newBook = new Book();
             library = new Library();
-            fileName = "../../data.json";
+            fileName = String.Format("{0}/LibraryCatalogue/data.json", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,8 +37,8 @@ namespace LibraryCatalogue
                 newBook.title = title.Text;
                 newBook.year = Int32.Parse(year.Text);
                 newBook.authors.Add(newAuthor);
-                newBook.categories.Add(category.Text);
-                newBook.genres.Add(genre.Text);
+                newBook.categories.Add("");
+                newBook.genres.Add("");
                 newBook.publisher = publisher.Text;
 
                 library.books.Add(newBook);
