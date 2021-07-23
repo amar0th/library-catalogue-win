@@ -346,7 +346,6 @@ namespace LibraryCatalogue
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.title);
             this.Controls.Add(this.label3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "LibraryCatalogue";
             this.Text = "Library Catalogue";
