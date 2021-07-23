@@ -30,11 +30,11 @@ namespace LibraryCatalogue
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.firstName = new System.Windows.Forms.TextBox();
             this.lastName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.TextBox();
@@ -75,17 +75,6 @@ namespace LibraryCatalogue
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Автор";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(182, 333);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(42, 44);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -95,7 +84,6 @@ namespace LibraryCatalogue
             this.label1.Size = new System.Drawing.Size(54, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Име";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // firstName
             // 
@@ -122,6 +110,17 @@ namespace LibraryCatalogue
             this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Фамилия";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(182, 333);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(42, 44);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "+";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             // 
             // button1
             // 

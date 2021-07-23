@@ -19,7 +19,7 @@ namespace LibraryCatalogue
             InitializeComponent();
         }
 
-        private void HandleData()
+        protected private void HandleData()
         {
             string data = File.ReadAllText(fileName);
             Library lib = JsonConvert.DeserializeObject<Library>(data);

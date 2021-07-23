@@ -22,11 +22,6 @@ namespace LibraryCatalogue
             fileName = String.Format("{0}/LibraryCatalogue/data.json", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void submit_Click(object sender, EventArgs e)
         {
             
