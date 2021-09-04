@@ -31,11 +31,12 @@ namespace LibraryCatalogue
         {
             
             try
-            {
-                newAuthor.firstName = firstName.Text;
+            { 
+                        newAuthor.firstName = firstName.Text;
                 newAuthor.lastName = lastName.Text;
                 newBook.title = title.Text;
                 newBook.year = Int32.Parse(year.Text);
+                        newBook.copies = Int32.Parse(copies.Text);
                 newBook.authors.Add(newAuthor);
                 newBook.categories.Add("");
                 newBook.genres.Add("");

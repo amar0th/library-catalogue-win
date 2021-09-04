@@ -16,6 +16,7 @@ namespace LibraryCatalogue
     {
         public string title { get; set; }
         public int year { get; set; }
+        public int copies { get; set; }
         public List<Author> authors { get; set; }
         public List<string> categories { get; set; }
         public List<string> genres { get; set; }

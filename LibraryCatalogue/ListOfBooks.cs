@@ -134,10 +134,21 @@ namespace LibraryCatalogue
                 publisherYear.Left = publisherYear.Parent.Right - publisherYear.Width - 5;
                 publisherYear.Top = publisherYear.Parent.Top + 80;
 
+                Label bookCopies = new Label
+                {
+                    AutoSize = true,
+                    Parent = panel,
+                    Text = String.Format("Копия: {0}", currentBook.copies)
+                };
+
+                bookCopies.Left = bookCopies.Parent.Right - bookCopies.Width - 5;
+                bookCopies.Top = bookCopies.Parent.Top + 5;
+
                 Controls.Add(bookGenre);
                 Controls.Add(bookCategory);
                 Controls.Add(publisherYear);
                 Controls.Add(bookTitle);
+                Controls.Add(bookCopies);
                 Controls.Add(panel);
             }
 
